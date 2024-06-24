@@ -26,4 +26,4 @@ This is the backend API for the Transactions Management application. The API pro
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/omkar7075/Roxiler_MERNStackChallenge]
+   git clone https://github.com/omkar7075/Roxiler_MERNStackChallenge.git
