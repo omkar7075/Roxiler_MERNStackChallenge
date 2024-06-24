@@ -1,0 +1,18 @@
+
+computerdeapartmentms903
+cFceeAbdem4fxVHz
+
+
+mongodb+srv://computerdeapartmentms903:cFceeAbdem4fxVHz@cluster0.okrg4tz.mongodb.net/
+
+
+
+mongodb+srv://computerdeapartmentms903:cFceeAbdem4fxVHz@cluster0.okrg4tz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+
+GET http://localhost:5000/api/initialize
+GET http://localhost:5000/api/transactions
+GET http://localhost:5000/api/statistics?month=January
+GET http://localhost:5000/api/bar-chart?month=January
+GET http://localhost:5000/api/pie-chart?month=January
+GET http://localhost:5000/api/combined-data?month=January

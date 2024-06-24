@@ -1,0 +1,101 @@
+
+.btn{
+  background-color: #04AA6D;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.image{
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.search-box{
+  padding: 12px 16px;
+  float: inline-end;
+}
+
+.monthdrop{
+  float: left;
+}
+
+
+.statistics{
+  background-color: #04AA6D;
+  width: 200px;
+  align-items: center;
+  text-align: center;
+  padding: auto;
+  margin: auto;
+  
+}
+/* transactiontable */
+
+.transaction{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.transaction td, .transaction th{
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+.transaction tr:nth-child(even)>{
+background-color: #f2f2f2;
+}
+
+.transaction tr:hover{
+  background-color: #ddd;
+
+}
+
+.transaction th{
+  padding-top: 2%;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* monthdropdown */
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+  align-items: center;
+
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content:hover{
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover ,.dropdown-content{
+  display: block;
+}
+
+.dropdown:hover{
+  background-color: #3e8e41;
+}
