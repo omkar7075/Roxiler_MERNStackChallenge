@@ -33,7 +33,9 @@ This project is a full-stack application for managing transactions. It includes 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/transactions-management.git
+   git clone https://github.com/omkar7075/Roxiler_MERNStackChallenge.git
+ 
+```bash
 cd backend
 npm install
 cd ../frontend
