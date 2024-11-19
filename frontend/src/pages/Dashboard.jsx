@@ -5,6 +5,7 @@ import MonthDropdown from '../Components/MonthDropdown';
 import TransactionTable from '../Components/TransactionTable';
 import TransactionStatistics from '../Components/TransactionStatistics';
 import TransactionBarChart from '../Components/TransactionBarChart';
+import TransactionPieChart from '../Components/TransactionPieChart';
 const Dashboard = () => {
 const [selectedMonth, setSelectedMonth] = useState('March');
 return (
