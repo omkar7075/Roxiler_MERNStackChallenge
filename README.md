@@ -31,7 +31,7 @@ This project is a full-stack application for managing transactions. It includes 
 
 ## Installation
 
-1. Clone the repository:
+ Clone the repository:
    ```bash
    git clone https://github.com/omkar7075/Roxiler_MERNStackChallenge.git
  
@@ -42,9 +42,7 @@ cd ../frontend
 npm install
 
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
 
-REACT_APP_API_URL=http://localhost:5000/api
 
 cd backend
 npm start
