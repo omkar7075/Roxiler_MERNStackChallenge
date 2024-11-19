@@ -11,7 +11,7 @@ const [currentPage, setCurrentPage] = useState(1);
 const [totalPages, setTotalPages] = useState(1);
 const fetchTransactions = async (page, search) => {
 try {
-const response = await axios.get('http://localhost:5000/api/transactions', {
+const response = await axios.get('https://roxiler-mernstackchallenge.onrender.com/api/transactions', {
 params: {
 month: selectedMonth,
 page,
