@@ -311,15 +311,18 @@ exports.getPieChartData = async (req, res) => {
           const { month, page, perPage, search } = req.query;
       
           
-          const [transactionsResponse, statisticsResponse, barChartResponse] = await Promise.all([
-            axios.get(`http://localhost:${PORT}/api/transactions`, {
+          const [transactionsResponse, statisticsResponse, barChartResponse, pieChartResponse] = await Promise.all([
+            axios.get(`https://roxiler-mernstackchallenge.onrender.com:${PORT}/api/transactions`, {
               params: { page, perPage, search }
             }),
-            axios.get(`http://localhost:${PORT}/api/statistics`, {
+            axios.get(`https://roxiler-mernstackchallenge.onrender.com:${PORT}/api/statistics`, {
               params: { month }
             }),
-            axios.get(`http://localhost:${PORT}/api/bar-chart`, {
+            axios.get(`https://roxiler-mernstackchallenge.onrender.com:${PORT}/api/bar-chart`, {
               params: { month }
+            }),
+            axios.get(`https://roxiler-mernstackchallenge.onrender.com:${PORT}/api/pie-chart`, {
+               params: { month }
             })
           ]);
       
@@ -327,7 +330,8 @@ exports.getPieChartData = async (req, res) => {
           const combinedData = {
             transactions: transactionsResponse.data,
             statistics: statisticsResponse.data,
-            barChart: barChartResponse.data
+            barChart: barChartResponse.data,
+            pieChart: pieChartResponse.data
           };
       
        
