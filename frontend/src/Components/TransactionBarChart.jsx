@@ -50,7 +50,7 @@ const [barChartData, setBarChartData] = useState([]);
 useEffect(() => {
 const fetchBarChartData = async () => {
 try {
-const response = await axios.get('http://localhost:5000/api/bar-chart', { params: { month: selectedMonth } });
+const response = await axios.get('https://roxiler-mernstackchallenge.onrender.com/api/bar-chart', { params: { month: selectedMonth } });
 setBarChartData(response.data);
 } catch (error) {
 console.error('Error fetching bar chart data:', error);
