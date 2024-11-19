@@ -16,6 +16,8 @@ return (
 setSelectedMonth={setSelectedMonth} />
 <TransactionTable selectedMonth={selectedMonth} />
 <TransactionBarChart selectedMonth={selectedMonth} />
+<TransactionPieChart selectedMonth={selectedMonth} />
+
 </div>
 );
 };
