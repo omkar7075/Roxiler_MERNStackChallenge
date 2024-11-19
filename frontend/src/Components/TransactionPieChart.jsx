@@ -29,8 +29,8 @@ const TransactionPieChart = ({ selectedMonth }) => {
       <PieChart width={600} height={300}>
         <Pie
           data={pieChartData}
-          dataKey="value"
-          nameKey="name"
+          dataKey="range"
+          
           cx="50%"
           cy="50%"
           outerRadius={100}
