@@ -24,27 +24,27 @@ const TransactionPieChart = ({ selectedMonth }) => {
   }, [selectedMonth]);
 
   return (
-    <div>
-      <h1>Pie Chart:</h1>
-      <PieChart width={600} height={300}>
-        <Pie
-          data={pieChartData}
-          dataKey="range"
-          
-          cx="50%"
-          cy="50%"
-          outerRadius={100}
-          fill="#8884d8"
-          label
-        >
-          {pieChartData.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-          ))}
-        </Pie>
-        <Tooltip />
-        <Legend />
-      </PieChart>
-    </div>
+   <div>
+  <h1>Pie Chart:</h1>
+  <PieChart width={600} height={300}>
+    <Pie
+      data={pieChartData}
+      dataKey="count" // Corrected to reflect the numeric data key
+      nameKey="range" // Added to display the labels correctly
+      cx="50%"
+      cy="50%"
+      outerRadius={100}
+      fill="#8884d8"
+      label
+    >
+      {pieChartData.map((entry, index) => (
+        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+      ))}
+    </Pie>
+    <Tooltip />
+    <Legend />
+  </PieChart>
+</div>
   );
 };
 
