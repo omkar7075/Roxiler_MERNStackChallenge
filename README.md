@@ -45,10 +45,14 @@ PORT=5000
 
 
 cd backend
-npm start
+node server.js
 
 cd ../frontend
 npm start
 
 
 #Backend API
+https://roxiler-mernstackchallenge.onrender.com/api/transactions
+https://roxiler-mernstackchallenge.onrender.com/api/transactions
+https://roxiler-mernstackchallenge.onrender.com/api/bar-chart
+https://roxiler-mernstackchallenge.onrender.com/api/pie-chart
