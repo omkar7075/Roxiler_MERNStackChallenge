@@ -35,7 +35,7 @@ This project is a full-stack application for managing transactions. It includes 
    ```bash
    git clone https://github.com/omkar7075/Roxiler_MERNStackChallenge.git
  
-```bash
+
 cd backend
 npm install
 cd ../frontend
@@ -52,7 +52,9 @@ npm start
 
 
 #Backend API
+https://roxiler-mernstackchallenge.onrender.com/api/initialize
 https://roxiler-mernstackchallenge.onrender.com/api/transactions
-https://roxiler-mernstackchallenge.onrender.com/api/transactions
+https://roxiler-mernstackchallenge.onrender.com/api/statistics
 https://roxiler-mernstackchallenge.onrender.com/api/bar-chart
 https://roxiler-mernstackchallenge.onrender.com/api/pie-chart
+https://roxiler-mernstackchallenge.onrender.com/api/combined-data
